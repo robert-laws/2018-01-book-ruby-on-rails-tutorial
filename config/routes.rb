@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   get '/hello', to: 'application#hello'
 
   # resources :users, only: [:index, :show]
-  get '/users', to: 'users#index'
-  get '/users/:id', to: 'users#show', as: 'user'
+  get '/doctors', to: 'doctors#index'
+  get '/doctors/:id', to: 'doctors#show', as: 'doctor'
 
-  root 'users#index'
+  root 'doctors#index'
 end
