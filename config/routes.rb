@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
   get '/hello', to: 'application#hello'
 
-  get 'doctors/index'
+  resources :doctors
 
   # get '/doctors', to: 'doctors#index'
   # get '/doctors/:id', to: 'doctors#show', as: 'doctor'
 
-  # root 'doctors#index'
+  root 'doctors#index'
 end
