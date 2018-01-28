@@ -1,7 +1,7 @@
+Appointment.destroy_all
 Patient.destroy_all
 Doctor.destroy_all
 Hospital.destroy_all
-Appointment.destroy_all
 
 @hospital = Hospital.create(name: "Hope Hospital")
 
